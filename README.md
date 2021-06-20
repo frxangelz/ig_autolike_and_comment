@@ -8,7 +8,7 @@ the extension may not work in the future if Instagram changes their layout, in t
 Or You can watch my youtube video how to do that.
 
 Youtube Demo :
-
+https://www.youtube.com/watch?v=yqcu0gEG-_g
 
 my youtube channel :
 https://www.youtube.com/c/freeangelz?sub_confirmation=1
