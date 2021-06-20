@@ -1,7 +1,6 @@
 const _ALLOW_COMMENT = 1; // disable or enable comments
 
 comments = [':)',
-			':) :)',
 			'^^'
 			];
 			

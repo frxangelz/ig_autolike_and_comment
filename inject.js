@@ -5,9 +5,6 @@
 	github : https://github.com/frxangelz/ig_autolike_and_comment
 */
 
-tick_count = 0;
-cur_url = "test";
-
 const _MAX_LIKE_TO_RELOAD = 20;
 const _TIME_TO_RELOAD = 300;		// 5 minutes
 
@@ -18,6 +15,9 @@ overlimit = false;
 r_interval = 0;
 
 first = true;
+
+tick_count = 0;
+cur_url = "test";
 
 var config = {
 	enable : 0,
@@ -53,8 +53,7 @@ function DoLike(){
 	}
 	
 	NoArticlesFoundCount = 0;
-	//console.log('found Articlse : '+articles.length);
-	info('articles : '+articles.length);
+	//console.log('found Articles : '+articles.length);
 	
 	var found = false;
 
@@ -99,6 +98,8 @@ function DoLike(){
 		
 	};
 	
+	// scroll down to last article
+	if(!found){	articles[articles.length-1].scrollIntoView(); }
 	return false;
 }
 

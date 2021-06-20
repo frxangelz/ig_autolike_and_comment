@@ -1,11 +1,13 @@
 
-const _LIKE_MODE = 1; // 0 = allow all, 1 = whitelist, 2 = blacklist
+const _LIKE_MODE = 0; // 0 = allow all, 1 = whitelist, 2 = blacklist
 
 const whitelist = ['lambe_turah',
 				   'katakitaig',
 				  'infodepok_id',
 				  'mediadepok.co'
 				 ];
+				 
+const whitelist = [];
 
 const blacklist = ['lambe_turah',
 				  'infodepok_id',
