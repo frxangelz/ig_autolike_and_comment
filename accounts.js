@@ -7,8 +7,6 @@ const whitelist = ['lambe_turah',
 				  'mediadepok.co'
 				 ];
 				 
-const whitelist = [];
-
 const blacklist = ['lambe_turah',
 				  'infodepok_id',
 				  'mediadepok.co'
