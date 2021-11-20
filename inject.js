@@ -37,6 +37,7 @@ function get_random(lmin,lmax){
 articles = null;
 NoArticlesFoundCount = 0;
 elapsed_time = 0;
+cur_action_count = 0;
 
 function DoLike(){
 	
@@ -58,7 +59,7 @@ function DoLike(){
 	var found = false;
 
 	for(var i=0; i<articles.length; i++){
-	
+		articles[i].scrollIntoView();
 		var acc = articles[i].querySelector('a.sqdOP');
 		if(!acc) { continue; }
 		
@@ -79,7 +80,8 @@ function DoLike(){
 
 			if(like[j].getAttribute('aria-label') == 'Like') {
 				config.total++;
-				like[j].scrollIntoView();
+				cur_action_count++;
+//				like[j].parentNode.scrollIntoView();
 				like[j].parentNode.click();
 				found = true;
 				break;
@@ -227,7 +229,7 @@ chrome.runtime.onMessage.addListener(
 				
 				show_info();
 		   
-				if(config.total >= _MAX_LIKE_TO_RELOAD){ window.location.href=cur_url; return; }
+				if(cur_action_count >= _MAX_LIKE_TO_RELOAD){ window.location.href=cur_url; return; }
 
 				if(NoArticlesFoundCount >= 3){
 						window.location.href=cur_url;
