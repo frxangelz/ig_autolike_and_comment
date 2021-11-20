@@ -1,4 +1,8 @@
 # ig_autolike_and_comment
+
+update : 0.0.2
+- fix bug counter
+
 Instagram Autolike and Comment Chrome Extension
 
 very simple macro to like and comment on instagram, use with random interval so it looks like normal user's activity
